@@ -1,0 +1,27 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #000000;
+  --hover-text-color: #2196f3;
+}
+
+.filter {
+  font-size: 16px;
+  line-height: 1.63;
+}
+.filter button:focus,
+button:hover {
+  color: white;
+  background: var(--hover-text-color);
+}
+
+.example a,
+a:visited {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  line-height: 1.88;
+}
+.example-title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+}

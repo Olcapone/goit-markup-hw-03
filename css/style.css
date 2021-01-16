@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #000000;
+  --hover-text-color: #2196f3;
+  --accent-text-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+/* LOGO */
+.web {
+  color: var(--hover-text-color);
+}
+.logo,
+.logo:visited {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--title-text-color);
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer .logo {
+  color: var(--accent-text-color);
+}
+
+/* Navigation */
+
+.navigation {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.main-button {
+  background-color: var(--hover-text-color);
+  color: var(--accent-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.menu a,
+.menu a:visited {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus,
+.tel a:hover,
+.tel a:focus {
+  color: var(--hover-text-color);
+}
+
+.tel a,
+.tel a:visited {
+  color: var(--primary-text-color);
+}
+.banner {
+  background: #2f303a;
+}
+
+h1 {
+  color: var(--accent-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+/* первый блок */
+
+.advantages h2 {
+  color: var(--accent-text-color);
+}
+.advantages p {
+  color: var(--primary-text-color);
+  line-height: 1.7;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+/* 3 blok */
+.team {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team h3 {
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+  background: #2f303a;
+  font-style: normal;
+}
+.contacts a,
+.contacts a:visited {
+  font-style: normal;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address a,
+.address a:visited {
+  color: var(--accent-text-color);
+}
