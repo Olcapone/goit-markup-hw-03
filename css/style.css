@@ -11,8 +11,26 @@
   --accent-text-color: #ffffff;
 }
 
-ul {
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.list {
   list-style: none;
+}
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 body {
@@ -57,25 +75,27 @@ body {
   letter-spacing: 0.06em;
 }
 
-.menu a,
-.menu a:visited {
+.menu,
+.menu:visited {
   color: var(--title-text-color);
   text-decoration: none;
 }
 
-.menu a:hover,
-.menu a:focus,
-.tel a:hover,
-.tel a:focus {
+.tel,
+.tel:visited {
+  color: var(--primary-text-color);
+}
+
+.menu:hover,
+.menu:focus,
+.tel:hover,
+.tel:focus {
   color: var(--hover-text-color);
 }
 
-.tel a,
-.tel a:visited {
-  color: var(--primary-text-color);
-}
 .banner {
   background: #2f303a;
+  outline: 2px solid black;
 }
 
 h1 {
@@ -88,9 +108,6 @@ h1 {
 }
 /* первый блок */
 
-.advantages h2 {
-  color: var(--accent-text-color);
-}
 .advantages p {
   color: var(--primary-text-color);
   line-height: 1.7;
@@ -119,15 +136,13 @@ h2 {
 
 .footer {
   background: #2f303a;
-  font-style: normal;
 }
-.contacts a,
-.contacts a:visited {
-  font-style: normal;
+.contacts,
+.contacts:visited {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
-.address a,
-.address a:visited {
+.address,
+.address:visited {
   color: var(--accent-text-color);
 }
