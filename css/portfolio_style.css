@@ -14,8 +14,8 @@ button:hover {
   background: var(--hover-text-color);
 }
 
-.example a,
-a:visited {
+.example,
+.example:visited {
   text-decoration: none;
   color: var(--primary-text-color);
   line-height: 1.88;
