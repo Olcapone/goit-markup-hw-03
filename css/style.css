@@ -67,6 +67,7 @@ body {
 .manu-container {
   display: flex;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -75,6 +76,7 @@ body {
 .tel-container {
   display: flex;
   padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: auto;
 }
 
@@ -109,7 +111,12 @@ body {
   line-height: 1.19;
 
   padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
+}
+
+.banner {
+  background: #2f303a;
 }
 
 .main-button {
@@ -119,10 +126,20 @@ body {
   line-height: 1.88;
   font-weight: 500;
   letter-spacing: 0.06em;
+  border: none;
+  margin-top: 40px;
+  padding: 10px 32px;
 }
-.banner {
-  background: #2f303a;
-  outline: 2px solid black;
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1600px;
+  padding: 200px 0px 280px 0px;
+}
+
+.space-sections {
+  padding-bottom: 94px;
 }
 
 h1 {
@@ -131,9 +148,20 @@ h1 {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 /* первый блок */
+.advantages-container {
+  display: flex;
+  min-width: 270px;
+  padding-top: 94px;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages h3 {
+  padding-bottom: 10px;
+}
 
 .advantages p {
   color: var(--primary-text-color);
@@ -146,17 +174,36 @@ h2 {
   font-weight: 700;
   color: var(--title-text-color);
   text-align: center;
+  padding-bottom: 50px;
+}
+
+.img-examples {
+  display: flex;
+  align-items: center;
+  margin: -15px;
+}
+.img-examples-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* 3 blok */
 .team {
+  background-color: #f5f4fa;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
+  padding-top: 94px;
 }
 .team h3 {
   color: var(--title-text-color);
   font-weight: 500;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+}
+.team-person:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Footer */
@@ -166,6 +213,20 @@ h2 {
 .footer {
   background: #2f303a;
 }
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+.footer .logo {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.list-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contacts,
 .contacts:visited {
   line-height: 1.7;
