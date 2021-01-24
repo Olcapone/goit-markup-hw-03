@@ -9,11 +9,16 @@
   justify-content: center;
   font-size: 16px;
   line-height: 1.63;
+  padding-top: 100px;
+  padding-bottom: 56px;
 }
 .modal-btn {
   border: none;
   min-width: 73px;
   padding: 6px 22px;
+}
+.filter li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter button:focus,
@@ -21,6 +26,16 @@ button:hover {
   color: white;
   background: var(--hover-text-color);
   border: none;
+}
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px;
+}
+
+.example {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
 }
 
 .example,
@@ -33,4 +48,11 @@ button:hover {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
+}
+
+.example:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.example:nth-last-child(-n + 3) {
+  margin-bottom: 30px;
 }
