@@ -96,7 +96,7 @@ body {
 .tel:hover,
 .tel:focus {
   color: var(--hover-text-color);
-  /* border: none;*/
+  outline: none;
 }
 
 /* LOGO */
