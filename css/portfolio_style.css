@@ -3,6 +3,10 @@
   --title-text-color: #000000;
   --hover-text-color: #2196f3;
 }
+.selection {
+  padding-top: 100px;
+  padding-bottom: 56px;
+}
 
 .filter {
   display: flex;
@@ -10,8 +14,6 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
-  padding-top: 100px;
-  padding-bottom: 56px;
 }
 .modal-btn {
   border: none;
@@ -34,10 +36,20 @@ button:hover {
 .example-list {
   display: flex;
   flex-wrap: wrap;
+
   margin: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.example-list-space {
+  margin-top: 30px;
+  padding-bottom: 94px;
 }
 
 .example {
+  width: calc((100%-60px) / 3);
+  max-width: 370px;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
