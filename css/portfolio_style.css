@@ -16,12 +16,12 @@
   line-height: 1.63;
 }
 .modal-btn {
-  border: none;
   min-width: 73px;
   padding: 6px 22px;
   background: #f5f4fa;
   border-radius: 4px;
   outline: none;
+  border: none;
 }
 .filter li:not(:last-child) {
   margin-right: 8px;
