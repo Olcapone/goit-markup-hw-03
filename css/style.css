@@ -120,6 +120,7 @@ body {
 
 .banner {
   background: #2f303a;
+  padding: 200px 0px 280px 0px;
 }
 
 .main-button {
@@ -139,7 +140,6 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1600px;
-  padding: 200px 0px 280px 0px;
 }
 
 .space-sections {
@@ -154,18 +154,17 @@ h1 {
   letter-spacing: 0.06em;
 }
 /* первый блок */
-.advantages-container {
+.advantages {
+  padding-top: 94px;
+}
+
+.advantages-list {
   display: flex;
   min-width: 270px;
-
-  padding-top: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.list-item:not(:last-child) {
-  margin-right: 30px;
-}
 .advantages h3 {
   padding-bottom: 10px;
 }
@@ -174,6 +173,12 @@ h1 {
   color: var(--primary-text-color);
   line-height: 1.7;
 }
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* второй блок */
 
 h2 {
   font-size: 36px;
@@ -191,10 +196,10 @@ h2 {
 
 .img-examples {
   display: flex;
+  justify-content: center;
   align-items: center;
-
-  margin: -15px;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .img-examples-item:not(:last-child) {
@@ -221,7 +226,8 @@ h2 {
 .team-list {
   display: flex;
   justify-content: center;
-  margin: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .team-person {
   padding-bottom: 30px;
@@ -238,23 +244,29 @@ h2 {
 }
 
 /* Footer */
-.footer .logo {
-  color: var(--accent-text-color);
-}
+
 .footer {
   background: #2f303a;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer .container {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
 }
 .footer .logo {
-  margin: 0;
-  padding: 0;
+  color: var(--accent-text-color);
+
+  margin: 0px;
+  padding: 0px;
   margin-bottom: 20px;
+  padding-left: 15px;
 }
+
+.footer address {
+  padding-left: 15px;
+}
+
 .list-address:not(:last-child) {
   padding: 0px;
   margin-bottom: 9px;
