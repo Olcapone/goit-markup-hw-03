@@ -2,7 +2,25 @@
   --primary-text-color: #757575;
   --title-text-color: #000000;
   --hover-text-color: #2196f3;
+  --big-space: 94px;
+  --betw-space: 30px;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .selection {
   padding-top: 100px;
   padding-bottom: 56px;
@@ -22,6 +40,7 @@
   border-radius: 4px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .filter li:not(:last-child) {
   margin-right: 8px;
@@ -36,19 +55,19 @@ button:hover {
 .example-list {
   display: flex;
   flex-wrap: wrap;
-
-  margin: -30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  /*надо позже разобраться почему не работает
+   width: calc(100% / 4-100px);
+  margin: -30px; 
+  padding-left: 15px;
+  padding-right: 15px; */
 }
 
 .example-list-space {
-  margin-top: 30px;
-  padding-bottom: 94px;
+  margin-top: var(--betw-space);
+  padding-bottom: var(--big-space);
 }
 
 .example {
-  width: calc((100%-60px) / 3);
   max-width: 370px;
   border: 1px solid #eeeeee;
 }
@@ -69,9 +88,9 @@ button:hover {
 }
 
 .example:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-right: var(--betw-space);
 }
 
 .example:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+  margin-bottom: var(--betw-space);
 }
